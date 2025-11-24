@@ -25,7 +25,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Me',
-      value: 'tadiwamangate9@gmail.com',
+      value: '@amanyeka8gmail.com',
       description: 'Send me an email and I\'ll respond within 24 hours'
     },
     {
@@ -37,7 +37,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Harere mufakose',
+      value: 'Harare Budiriro',
       description: 'Open to remote work and travel opportunities'
     }
   ];

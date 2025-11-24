@@ -6,12 +6,11 @@ import InteractiveBackground from '../components/InteractiveBackground';
 import FloatingTechIcons from '../components/FloatingTechIcons';
 import ProfileImage from '../images/TadiwaProfile.jpg';
 
-
+// ❌ Removed broken import
+// import AliciaImage from "../../public/aliciapic1.png";
 
 const Home = () => {
-  /* skills and featuredProjects arrays unchanged - copy yours here */
   const skills = [
-    // ...same as your original skill objects (Code, Database, Cloud, Palette, Smartphone, BarChart3)
     {
       icon: Code,
       title: 'Web Development',
@@ -76,15 +75,11 @@ const Home = () => {
 
   return (
     <div className="relative">
-      {/* Background layers */}
       <InteractiveBackground />
       <FloatingTechIcons />
 
-      {/* Page content (above backgrounds) */}
       <main className="relative z-20 pt-20">
-        {/* ...paste the full Home content you provided (Hero, Skills, Featured Projects) */}
         <div className="pt-20">
-          {/* Hero Section */}
           <section className="min-h-screen flex items-center justify-center px-6 lg:px-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -94,19 +89,21 @@ const Home = () => {
               >
                 <div className="flex items-center mb-6">
                   <img
-  src={ProfileImage}
-  alt="Profile"
-  className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
-/>
-
+                    src="/aliciapic1.jpg"
+                    alt="Profile"
+                    className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
+                  />
                 </div>
+
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                   Designing <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Dreams</span>,<br />
                   Building <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Futures</span>.
                 </h1>
+
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-  I build full-stack apps, drink too much coffee, and pretend everything worked on the first try ☕💻🔥😊👌
-</p>
+                  I build full-stack apps, drink too much coffee, and pretend everything worked on the first try ☕💻🔥😊👌
+                </p>
+
                 <div className="flex flex-col sm:flex-row gap-4">
                   <motion.button
                     className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full font-semibold hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 hover:shadow-2xl hover:shadow-pink-500/25"
@@ -116,6 +113,7 @@ const Home = () => {
                     <Mail className="w-5 h-5" />
                     <span>Contact Me</span>
                   </motion.button>
+
                   <motion.button
                     className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-pink-400 hover:text-pink-600 transition-all duration-300 flex items-center justify-center space-x-2 hover:bg-pink-50"
                     whileHover={{ scale: 1.05, y: -2 }}
@@ -135,13 +133,13 @@ const Home = () => {
               >
                 <div className="relative">
                   <div className="w-full h-96 bg-gradient-to-r from-orange-400 to-yellow-500 rounded-3xl overflow-hidden">
-                  <img
-  src={ProfileImage}
-  alt="Creative workspace"
-  className="w-full h-100px object-cover"
-/>
-
+                    <img
+                      src="/alicia2.jpg"
+                      alt="Creative workspace"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
+
                   <div className="absolute -top-4 -right-4 w-24 h-24 bg-white rounded-full shadow-xl flex items-center justify-center">
                     <motion.div
                       className="w-16 h-16 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center"
@@ -236,9 +234,11 @@ const Home = () => {
                         </motion.div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>
+
                       <div className="p-6">
                         <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
                         <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
+
                         <div className="flex flex-wrap gap-2 mb-4">
                           {project.tech.map((tech) => (
                             <span
@@ -249,6 +249,7 @@ const Home = () => {
                             </span>
                           ))}
                         </div>
+
                         <motion.a
                           href={project.link}
                           target="_blank"
