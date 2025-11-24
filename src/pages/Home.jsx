@@ -136,7 +136,7 @@ const Home = () => {
                     <img
                       src="/alicia2.jpg"
                       alt="Creative workspace"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
 
