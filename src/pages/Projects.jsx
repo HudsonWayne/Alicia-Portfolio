@@ -6,70 +6,52 @@ import { ExternalLink, Github, Heart, X } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Wedding Planner App',
+      title: 'Fizzi EJS',
       description:
-        'Developed a visually rich wedding planning platform that allows couples and planners to organize every detail of a wedding. Built role-based flows for Bride, Groom, and Planner with step-by-step planning tools. Implemented Google OAuth login/signup and personalized dashboards with progress tracking. Designed vendor pages with categories, detailed vendor profiles, and messaging options.',
-      image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg',
-      tech: ['React', 'Tailwind CSS', 'Firebase', 'MongoDB'],
-      category: 'Event Planning',
+        'Developed a modern web application using EJS templates, focusing on modular design and responsive layout. Implemented dynamic content rendering and optimized UI interactions for a smooth user experience.',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
+      tech: ['EJS', 'Node.js', 'Express', 'Tailwind CSS'],
+      category: 'Latest',
       featured: true,
-      link: 'https://plan-eta.vercel.app',
-      repo: null
+      link: 'https://fizzi-ejs.vercel.app/',
+      repo: null,
+      future: 'Add user authentication and real-time notifications.'
     },
     {
-      title: 'MuteroPay (Vehicle Licensing App)',
+      title: 'Smart Farms',
       description:
-        'Created a fintech-style mobile app to help Zimbabwean vehicle owners manage and pay license fees. Integrated with ZINARA to display license status, due dates, and penalties. Built features for in-app payments, personalized payment plans, and digital receipts with share options. Designed a clean, modern dashboard and blue-themed UI for easy navigation.',
-      image: 'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg',
+        'A client-side project focused on smart farming management. Built interactive dashboards, implemented data visualization for farm metrics, and optimized performance for large datasets.',
+      image: 'https://images.pexels.com/photos/4792477/pexels-photo-4792477.jpeg',
       tech: ['React', 'Tailwind CSS', 'Firebase'],
-      category: 'Fintech',
+      category: 'Client Projects',
       featured: true,
-      link: 'https://tax-lpuc.vercel.app',
-      repo: null
+      link: 'https://smart-farms-1yjd.vercel.app/',
+      repo: null,
+      future: 'Integrate IoT sensors for real-time farm data monitoring.'
     },
     {
-      title: 'DevHer Tracker',
+      title: 'Food Delivery Nu',
       description:
-        'Built a productivity and motivation platform tailored for women in tech. Implemented features to track coding progress, personal habits, and GitHub activity. Designed community-driven sections including Q&A, Help, Features, and About pages. Created a frontend-only application with interactive and user-friendly design.',
-      image: 'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg',
-      tech: ['React', 'Tailwind CSS'],
-      category: 'Productivity',
+        'E-commerce web application for food delivery. Implemented a fully functional shopping cart, product categories, and dynamic checkout process with real-time order updates.',
+      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg',
+      tech: ['React', 'Tailwind CSS', 'Firebase'],
+      category: 'E-Commerce',
       featured: true,
-      link: 'https://dev-her-lhbl.vercel.app',
-      repo: null
+      link: 'https://food-del-nu.vercel.app/',
+      repo: null,
+      future: 'Add payment gateway integration and order tracking.'
     },
     {
-      title: 'Personal Finance Tracker',
+      title: 'Amon Vajv',
       description:
-        'Developed a financial management dashboard to help users track money flow and plan budgets. Enabled tracking of income, expenses, savings, and budgets with interactive charts. Added predictions for spending and savings trends. Designed a clean, responsive UI with chart visualizations for better insights.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
-      tech: ['React', 'Tailwind CSS', 'Chart.js', 'Node.js', 'MongoDB'],
-      category: 'Finance',
-      featured: false,
-      link: null,
-      repo: null
-    },
-    {
-      title: 'Manhwa Comic App',
-      description:
-        'Developed a responsive comic reader web application for browsing and reading manhwa. Implemented an interactive React frontend styled with Tailwind CSS, ensuring seamless navigation and a modern UI. Applied media queries for device responsiveness, delivering an optimized reading experience across desktop and mobile.',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg',
-      tech: ['React', 'JavaScript', 'Tailwind CSS'],
-      category: 'Entertainment',
-      featured: false,
-      link: null,
-      repo: null
-    },
-    {
-      title: 'Travel Website Home Page',
-      description:
-        'Designed and built a visually engaging travel website landing page based on a wireframe prototype. Used React components and Tailwind CSS for a modular, responsive, and mobile-friendly layout. Showcased destination highlights with modern UI patterns to improve user engagement.',
-      image: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg',
-      tech: ['React', 'JavaScript', 'Tailwind CSS'],
-      category: 'Travel',
-      featured: false,
-      link: null,
-      repo: null
+        'Another e-commerce project focusing on modern UI and responsive design. Integrated product listings, filtering, and cart functionality for a seamless shopping experience.',
+      image: 'https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg',
+      tech: ['React', 'Tailwind CSS', 'Firebase'],
+      category: 'E-Commerce',
+      featured: true,
+      link: 'https://amon-vajv.vercel.app/',
+      repo: null,
+      future: 'Implement user reviews and recommendation engine.'
     }
   ];
 
@@ -277,6 +259,9 @@ const Projects = () => {
                         <li key={i}>{f}</li>
                       ))}
                     </ul>
+
+                    <h4 className="text-sm font-semibold text-gray-900 mt-4 mb-2">Future Improvements</h4>
+                    <p className="text-gray-600 text-sm">{projectsWithFeatures[active].future}</p>
                   </div>
 
                   <aside className="bg-gray-50 p-4 rounded-lg">
