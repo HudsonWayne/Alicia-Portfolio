@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Me',
-      value: '0774 700 857',
+      value: '071 366 2322',
       description: 'Available Monday to Friday, 9 AM - 6 PM EST'
     },
     {
